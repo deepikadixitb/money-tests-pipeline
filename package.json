@@ -1,0 +1,23 @@
+{
+  "name": "money-tests-pipeline",
+  "version": "1.0.0",
+  "description": "Money tests pipeline setup repository",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cucumber": "^2.0.0-rc.9",
+    "wdio-concise-reporter": "^0.1.2",
+    "wdio-cucumber-framework": "^0.2.17",
+    "wdio-junit-reporter": "^0.3.0",
+    "wdio-phantomjs-service": "^0.2.2",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "webdrivercss": "^1.1.10",
+    "webdriverio": "^4.8.0"
+  },
+  "scripts": {
+    "test-qa": "ENV_PREFIX=money.qa.internal ./node_modules/.bin/wdio wdio.conf.js"
+  },
+  "author": "Deepika Dixit",
+  "license": "ISC"
+}
